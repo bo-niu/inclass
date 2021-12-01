@@ -24,7 +24,7 @@ public class PrimeHttpClient {
 
     public boolean getPrimeRequest(String url) throws IOException, InterruptedException {
 
-        int retry = 5;
+        int retry = 1;
 
 //        System.out.println(url);
 
@@ -40,10 +40,12 @@ public class PrimeHttpClient {
             if (statusCode != 200 && statusCode != 401) {
                 retry = retry - 1;
             } else if (statusCode == 200) {
-                System.out.println("success!");
+//                System.out.println("success!");
                 isPrime = true;
+                return true;
             } else {
                 isPrime = false;
+                return true;
             }
         }
         return false;

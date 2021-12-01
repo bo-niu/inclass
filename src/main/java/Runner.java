@@ -76,7 +76,7 @@ public class Runner {
         System.out.println("~~~~~~~~~~~~~~~~~~ Here are the result ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
         System.out.println("Number of Prime is: " + primeCount);
         System.out.println("Percentage of Prime Number is: " + (double)primeCount / 100000.0);
-        System.out.println("Number of Successful Request: " + successfulRequestCount);
+//        System.out.println("Number of Successful Request: " + successfulRequestCount);
         System.out.println("Number of Unsuccessful Request: " + UnsuccessfulRequestCount);
         System.out.println("Total run time (wall time) is " + ms + "ms");
 

@@ -37,7 +37,7 @@ public class Worker implements Runnable {
     public void run() {
         for (int i=0; i<numPostRequest; i++) {
 //            String url = "http://" + ip + ":" + port + "/SkiResorts_war_exploded/skiers/2/seasons/1/days/1/skiers/"
-            String url = "http://" + ip + ":" + port + "/prime_server_war/prime/"
+            String url = "http://" + ip + ":" + port + "/prime/"
                     + RandomNumberGenerator.getRandomNumberBetween(1, 20000);
             try {
                 if (client.getPrimeRequest(url)) {
